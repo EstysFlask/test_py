@@ -46,7 +46,7 @@ for i in range(linkos, 4234060117999):
     yiks = []
     kras = []
     kprf = False
-    kek = 0
+    checker = 0
 
     for line in link.readlines():
         if line.find(b'<td>') != -1: 
@@ -60,9 +60,9 @@ for i in range(linkos, 4234060117999):
     for i in range(len(kras)):
         kras[i] = kras[i].decode('cp1251')
         if not "город Краснодар" in kras[i] or not kras[i]:
-            kek = 1
+            checker = 1
 
-    if kek == 0:
+    if checker == 0:
         for i in range(len(lines)):
             lines[i] = lines[i].decode('cp1251')
             if "КОММУНИСТИЧЕСКАЯ ПАРТИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ" in lines[i]: 
