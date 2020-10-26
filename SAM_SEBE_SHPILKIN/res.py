@@ -21,4 +21,4 @@ with_kprf = [11.35, 9.90, 12.02, 10.54, 20.75, 18.37, 34.46, 26.15, 5.45, 25.56,
 without_kprf = [16.35, 8.68, 21.39, 20.51, 24.29, 14.74, 27.62, 8.13, 9.13, 7.02, 29.05, 27.78, 33.33, 11.60, 12.97, 9.36, 27.40, 26.47, 17.82, 19.23, 30.07, 22.43, 13.54, 32.63, 46.67, 30.74]
 average_with = float("{0:.2f}".format(sum(with_kprf)/len(with_kprf)))
 average_without = float("{0:.2f}".format(sum(without_kprf)/len(without_kprf)))
-res = print(str(average_with) + ' Δ ' + str(average_without))
+res = print(str(average_with)+'%' + ' Δ ' + str(average_without)+'%')
